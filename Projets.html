@@ -1,138 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <title>Mon Portfolio - Réalisations</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-    <header>
-        <div>
-            <a href="">Mon Portfolio</a>
-        </div>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Mon Portfolio</div>
         <nav>
             <ul>
-                <li><a href="index.html" >Accueil</a></li>
-                <li><a href="Projets.html">Projets</a></li>
-                <li><a href="passions.html">Passions</a></li>
-                 <li><a href="divertissement.html">Divertissement</a></li>
-                  <li><a href="contact.html"class="active Remy">contact</a></li>
-                </li>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#" class="active">Projets</a></li>
+                <li><a href="#">Passions</a></li>
+                <li><a href="#">Divertissement</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="container">
         <div class="header-section">
-            <h1>Mes Realisations</h1>
-        <div class="projets-grid">
+            <h1>Mes Réalisations</h1>
+            <div class="underline"></div>
+        </div>
+
+        <div class="projects-grid">
             <article class="card">
-                <div class="card-img-1">
-                    <img src="images/Famille.jpg" alt="Mon projet" width="200">
-                </div>
+                <div class="card-img img-1"></div>
                 <div class="card-body">
-                </div>
                     <h3>Site E-commerce</h3>
-                    <p>Une boutique en ligne complète développée avec HTML,CSS et JavaScript pur.</p>
+                    <p>Une boutique en ligne complète développée avec HTML, CSS et JavaScript pur.</p>
                     <div class="tags">
-                        <span class="tag">HTML,CSS,JS</span>
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><i class="fa-brands fa-github"></i>Code</a>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </article>
+
             <article class="card">
-                <div class="card-img-2">
-                    <img src="images/Famille1.jpg" alt="Mon projet" width="200">
+                <div class="card-img img-2"></div>
+                <div class="card-body">
+                    <h3>Gestionnaire de Tâches</h3>
+                    <p>Application web pour organiser ses projets quotidiens avec stockage local.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span><span class="tag">Flask</span>
+                    </div>
                 </div>
-                    <div class="card-body">
-                        <h3>Gestionnaire de Taches</h3>
-                        <p>Applications web pour organiser ses projets quotidiens avec stockage local.</p>
-                        <div class="tags">
-                            <span class="tag">Python,Flask</span>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#"><i class="fa-brands fa-github"></i>Code</a>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
-                    </div>
+                <div class="card-footer">
+                    <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </article>
+
             <article class="card">
-                <div class="card-img-3">
-                    <img src="images/Famille2.jpg" alt="Mon projet" width="200">
-                </div>
+                <div class="card-img img-3"></div>
                 <div class="card-body">
                     <h3>Blog Personnel</h3>
-                    <p>Projet en cours de migrations vers Laravel pour apprendre le backed.</p>
+                    <p>Projet en cours de migration vers Laravel pour apprendre le backend.</p>
                     <div class="tags">
-                        <span class="tag">PHP,Laravel</span>
+                        <span class="tag">PHP</span><span class="tag">Laravel</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><i class="fa-brands fa-github"></i>Code</a>
-                    <span class="statuts"><i class="fa-solid fa-circle-notch"></i>Bientot</span>
+                    <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    <span class="status"><i class="fa-solid fa-circle-notch"></i> Bientôt</span>
                 </div>
             </article>
+
             <article class="card">
-                <div class="card-img-4">
-                    <img src="images/Famille3.jpg" alt="Mon projet" width="200">
-                </div>
+                <div class="card-img img-4"></div>
                 <div class="card-body">
                     <h3>Dashboard d'Analyse</h3>
-                    <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotilb</p>
+                    <p>Visualisation de données dynamiques avec Python et la bibliothèque Matplotlib.</p>
                     <div class="tags">
-                        <span class="tag">Python,Data</span>
+                        <span class="tag">Python</span><span class="tag">Data</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><i class="fa-brands fa-github"></i>Code</a>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </article>
+
             <article class="card">
-                <div class="card-img-5">
-                    <img src="images/Famille4.jpg" alt="Mon projet" width="200">
-                </div>
+                <div class="card-img img-5"></div>
                 <div class="card-body">
-                    <h3>Application Méteo</h3>
-                    <p>Une application utilisant une API en temps réel pour afficher la méteo mondiale.</p>
+                    <h3>Application Météo</h3>
+                    <p>Une application utilisant une API en temps réel pour afficher la météo mondiale.</p>
                     <div class="tags">
-                        <span class="tag">JavaScript,API</span>
+                        <span class="tag">JavaScript</span><span class="tag">API</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><i class="fa-brands fa-github"></i>Code</a>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>Démo</a>
+                    <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Démo</a>
                 </div>
             </article>
+
             <article class="card">
-                <div class="card-img-6">
-                    <img src="images/Famille5.jpg" alt="Mon projet" width="200">
-                </div>
+                <div class="card-img img-6"></div>
                 <div class="card-body">
-                    <h3>Maquette Mobile Ui</h3>
-                    <p>Conception d'une interface utilisateur moderne pour une application de fitness</p>
+                    <h3>Maquette Mobile UI</h3>
+                    <p>Conception d'une interface utilisateur moderne pour une application de fitness.</p>
                     <div class="tags">
-                        <span class="tag">Figma,Design</span>
+                        <span class="tag">Figma</span><span class="tag">Design</span>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="#"><i class="fa-solid fa-palette"></i>Design</a>
-                    <a href="#"><i class="fa-regular fa-eye"></i>Aperçu</a>
+                    <a href="#"><i class="fa-solid fa-palette"></i> Design</a>
+                    <a href="#"><i class="fa-regular fa-eye"></i> Aperçu</a>
                 </div>
             </article>
         </div>
     </main>
-        <p>&copy; 2026 Remy MANYONGA. Tous droits réservés</p>
+    <footer>
+        <p>© 2026 Remy MANYONGA. Tous droits réservés.</p>
         <div>
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <div>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
     </footer>
 </body>
 </html>

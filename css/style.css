@@ -228,3 +228,208 @@ footer a:hover{
   color: var(--orange-vif);
   transform: translate(-3px);
 }
+/* Styles pour la page Contact */
+.contact-container {
+    max-width: 1000px;
+    margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact-info h2::after {
+    margin: 1rem 0; /* Aligne la barre à gauche */
+}
+
+.info-details {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--gris-tres-fonce);
+}
+
+.social-apps {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social-apps a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s;
+}
+
+.social-apps a:first-child { background-color: #25D366; } /* WhatsApp Green */
+.social-apps a:last-child { background-color: #0088cc; } /* Telegram Blue */
+
+.social-apps a:hover {
+    opacity: 0.8;
+}
+
+/* Style du Formulaire */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--gris-tres-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    outline-color: var(--violet-doux);
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--violet-fonce);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfdfe;
+    color: #444;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff;
+    border-bottom: 1px solid #f0f0f0;
+}
+.logo { color: #6c5ce7; font-weight: bold; font-size: 22px; }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { text-decoration: none; color: #333; font-size: 14px; font-weight: 500; }
+nav a.active { color: #6c5ce7; border-bottom: 2.5px solid #6c5ce7; padding-bottom: 5px; }
+
+/* HEADER SECTION */
+.header-section { text-align: center; margin: 60px 0; }
+.header-section h1 { color: #6c5ce7; font-size: 32px; font-weight: 600; }
+.underline { width: 45px; height: 3px; background: #6c5ce7; margin: 12px auto; border-radius: 10px; }
+
+/* GRID */
+.container { padding: 0 10%; }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+/* CARDS */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease;
+}
+.card:hover { transform: translateY(-5px); }
+
+.card-img { height: 190px; background-size: cover; background-position: center; background-color: #eee; }
+
+/* CETTE PARTIE NOUS AIDE A AJOUTER LES IMAGES IL FAUT RESPECTER L'EMPLACEMENT*/
+.img-1 { background-image: url('../images/1.jpeg'); }
+.img-2 { background-image: url('../images/2.jpeg'); }
+.img-3 { background-image: url('../images/3.jpeg'); }
+.img-4 { background-image: url('../images/4.jpeg'); }
+.img-5 { background-image: url('../images/5.jpeg'); }
+.img-6 { background-image: url('../images/6.jpeg'); }
+
+.card-body { padding: 25px; }
+.card-body h3 { color: #6c5ce7; font-size: 18px; margin-bottom: 12px; }
+.card-body p { color: #777; font-size: 13.5px; line-height: 1.6; margin-bottom: 20px; }
+
+/* STYLE DES TAGS (STYLE EXACT) */
+.tags { display: flex; gap: 8px; }
+.tag {
+    background-color: #f1efff; 
+    color: #6c5ce7;           
+    padding: 4px 12px;
+    border-radius: 20px;      
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* FOOTER DE CARTE (CODE & DEMO) */
+.card-footer {
+    display: flex;
+    justify-content: space-between; 
+    padding: 15px 25px;
+    border-top: 1px solid #f8f8f8;
+}
+.card-footer a, .status {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-footer i { font-size: 15px; color: #333; }
+.status { color: #999; }
+
+/* FOOTER GENERAL */
+footer {
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+.social-icons { margin-top: 20px; display: flex; justify-content: center; gap: 20px; }
+.social-icons a { color: white; font-size: 22px; }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 700px) { .projects-grid { grid-template-columns: 1fr; } }
+
