@@ -433,3 +433,140 @@ footer {
 @media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 700px) { .projects-grid { grid-template-columns: 1fr; } }
 
+
+
+.passions {
+    width: 90%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.grid-passions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.passion-card {
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+}
+
+.passion-card img {
+    width: 200px
+    height: auto;
+    object-fit: cover;
+}
+
+.passion-card .contenu {
+    padding: 2rem;
+    text-align: left;
+}
+
+.passion-card h3 {
+    color: var(--violet-doux);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.passion-card h3 i {
+    margin-right: 8px;
+}
+
+.passion-card p {
+    color: var(--gris-fonce);
+    line-height: 1.6;
+}
+
+/* --- Style Bento pour l'Ami (Lecture, Vidéos, Musique) --- */
+
+.container-divertissement {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 20px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 25px;
+}
+
+.bento-item {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+}
+
+.bento-item:hover {
+    transform: scale(1.02);
+}
+
+/* On fait du bloc Musique un bloc large qui prend toute la première ligne */
+.music-bento {
+    grid-column: 1 / span 2;
+    flex-direction: row !important; /* Image à côté du texte sur PC */
+}
+
+.bento-content {
+    padding: 40px;
+    flex: 1;
+}
+
+.bento-content i {
+    font-size: 2.5rem;
+    color: var(--violet-doux);
+    margin-bottom: 20px;
+}
+
+.bento-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--gris-tres-fonce);
+}
+
+.bento-content p {
+    color: var(--gris-fonce);
+    font-size: 1.1rem;
+    max-width: 400px;
+}
+
+.bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.music-bento img {
+    width: 50%;
+    max-height: 100%;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .music-bento {
+        grid-column: span 1;
+        flex-direction: column !important;
+    }
+    .music-bento img {
+        width: 50%;
+    }
+}
